@@ -1,12 +1,9 @@
 # Clippy
 
 Yes, Clippy from Microsoft Office is back — on macOS!
-
----
-
 Clippy can be moved around (drag with mouse) and be animated (right-click).
 
-The `SpriteKit`-Framework is used to animate through Clippy's sprite map.
+![Alt Text](demo.gif)
 
 --- 
 
