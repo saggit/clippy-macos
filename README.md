@@ -19,7 +19,7 @@ Clippy can be moved around (drag with mouse) and be animated (right-click).
 ## Build
 
 ```sh
-git clone https://github.com/Cosmo/Clippy.git
+git clone https://github.com/saggit/clippy-macos.git
 ```
 
 * Open project with Xcode
@@ -41,7 +41,6 @@ There are a few steps involved.
 brew install imagemagick
 ```
 Will be used to merge single `*.bmp` sprites into a single 32 bit PNG-file. 
-
 
 ```
 brew install ffmpeg
@@ -70,15 +69,6 @@ After the conversion step, you will get a new folder called `NEW_NAME.agent`.
 2. Move it to the Agents directory.
 3. Click `📎` → `Reload`
 4. Select new Agent under `📎` → `Agents` → `…`
-
-## Attributions
-
-Inspiration was taken from:
-
-* https://github.com/tanathos/ClippyVS (C#)
-* https://github.com/smore-inc/clippy.js (JavaScript)
-
-Graphics were created by *Microsoft*.
 
 ## Clippy: The Unauthorized Biography
 
