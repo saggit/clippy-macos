@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453D7F7F231F189600995AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D7F7E231F189600995AB3 /* AppDelegate.swift */; };
+		453D7F87231F189600995AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453D7F85231F189600995AB3 /* LaunchScreen.storyboard */; };
+		453D7F90231F189600995AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D7F8F231F189600995AB3 /* AppDelegate.swift */; };
+		45491A592325D842007E04E2 /* AgentBalloonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45491A582325D842007E04E2 /* AgentBalloonViewController.swift */; };
+		45491A652325E8CA007E04E2 /* clippit.agent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 45491A622325E8CA007E04E2 /* clippit.agent.zip */; };
+		45491A662325E8CA007E04E2 /* merlin.agent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 45491A632325E8CA007E04E2 /* merlin.agent.zip */; };
+		45491A672325E8CA007E04E2 /* links.agent.zip in Resources */ = {isa = PBXBuildFile; fileRef = 45491A642325E8CA007E04E2 /* links.agent.zip */; };
+		456FDA56231FA3E900170E12 /* GhostSKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FDA55231FA3E900170E12 /* GhostSKView.swift */; };
+		456FDA57231FB8B100170E12 /* AgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D7FC1231F90DA00995AB3 /* AgentViewController.swift */; };
+		459AC4942325799600C43B06 /* CGImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AC4932325799600C43B06 /* CGImageExtensions.swift */; };
+		459AC4952325799600C43B06 /* CGImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459AC4932325799600C43B06 /* CGImageExtensions.swift */; };
+		45A72A692322396B007DE9DA /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72A6723223968007DE9DA /* Agent.swift */; };
+		45A72B5A23235FCB007DE9DA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5923235FCB007DE9DA /* StringExtensions.swift */; };
+		45A72B5B23235FCB007DE9DA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5923235FCB007DE9DA /* StringExtensions.swift */; };
+		45A72B5D2323602A007DE9DA /* AgentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5C2323602A007DE9DA /* AgentInfo.swift */; };
+		45A72B5E2323602A007DE9DA /* AgentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5C2323602A007DE9DA /* AgentInfo.swift */; };
+		45A72B6023236038007DE9DA /* AgentBalloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5F23236038007DE9DA /* AgentBalloon.swift */; };
+		45A72B6123236038007DE9DA /* AgentBalloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B5F23236038007DE9DA /* AgentBalloon.swift */; };
+		45A72B6323236047007DE9DA /* AgentBranching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6223236047007DE9DA /* AgentBranching.swift */; };
+		45A72B6423236047007DE9DA /* AgentBranching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6223236047007DE9DA /* AgentBranching.swift */; };
+		45A72B6623236055007DE9DA /* AgentFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6523236055007DE9DA /* AgentFrame.swift */; };
+		45A72B6723236055007DE9DA /* AgentFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6523236055007DE9DA /* AgentFrame.swift */; };
+		45A72B6923236064007DE9DA /* AgentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6823236064007DE9DA /* AgentAnimation.swift */; };
+		45A72B6A23236064007DE9DA /* AgentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6823236064007DE9DA /* AgentAnimation.swift */; };
+		45A72B6C23236076007DE9DA /* AgentCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6B23236076007DE9DA /* AgentCharacter.swift */; };
+		45A72B6D23236076007DE9DA /* AgentCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6B23236076007DE9DA /* AgentCharacter.swift */; };
+		45A72B6F232366C9007DE9DA /* AgentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6E232366C9007DE9DA /* AgentImage.swift */; };
+		45A72B70232366C9007DE9DA /* AgentImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B6E232366C9007DE9DA /* AgentImage.swift */; };
+		45A72B7223237B29007DE9DA /* AgentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B7123237B29007DE9DA /* AgentState.swift */; };
+		45A72B7323237B29007DE9DA /* AgentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A72B7123237B29007DE9DA /* AgentState.swift */; };
+		45FF387F23242BA500F724B7 /* AgentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF387E23242BA500F724B7 /* AgentView.swift */; };
+		45FF38812324327800F724B7 /* AgentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF38802324327800F724B7 /* AgentController.swift */; };
+		45FF388323243E0400F724B7 /* AgentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF388223243E0400F724B7 /* AgentWindow.swift */; };
+		45FF38982325240600F724B7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF38972325240600F724B7 /* main.swift */; };
+		45FF389C23253CAB00F724B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FF389B23253CAB00F724B7 /* Assets.xcassets */; };
+		45FF389E23253CD300F724B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FF389D23253CD300F724B7 /* Assets.xcassets */; };
+		45FF38A0232541FA00F724B7 /* AgentViewController+AgentControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF389F232541FA00F724B7 /* AgentViewController+AgentControllerDelegate.swift */; };
+		45FF38A2232542BC00F724B7 /* AgentControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF38A1232542BC00F724B7 /* AgentControllerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		453D7F7B231F189600995AB3 /* Clippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		453D7F7E231F189600995AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		453D7F86231F189600995AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		453D7F88231F189600995AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		453D7F8D231F189600995AB3 /* Clippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		453D7F8F231F189600995AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		453D7F96231F189600995AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		453D7FC1231F90DA00995AB3 /* AgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentViewController.swift; sourceTree = "<group>"; };
+		45491A582325D842007E04E2 /* AgentBalloonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentBalloonViewController.swift; sourceTree = "<group>"; };
+		45491A622325E8CA007E04E2 /* clippit.agent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = clippit.agent.zip; sourceTree = "<group>"; };
+		45491A632325E8CA007E04E2 /* merlin.agent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = merlin.agent.zip; sourceTree = "<group>"; };
+		45491A642325E8CA007E04E2 /* links.agent.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = links.agent.zip; sourceTree = "<group>"; };
+		456FDA55231FA3E900170E12 /* GhostSKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostSKView.swift; sourceTree = "<group>"; };
+		459AC4932325799600C43B06 /* CGImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtensions.swift; sourceTree = "<group>"; };
+		45A72A6723223968007DE9DA /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		45A72A6A232257DB007DE9DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		45A72B5923235FCB007DE9DA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		45A72B5C2323602A007DE9DA /* AgentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentInfo.swift; sourceTree = "<group>"; };
+		45A72B5F23236038007DE9DA /* AgentBalloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentBalloon.swift; sourceTree = "<group>"; };
+		45A72B6223236047007DE9DA /* AgentBranching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentBranching.swift; sourceTree = "<group>"; };
+		45A72B6523236055007DE9DA /* AgentFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentFrame.swift; sourceTree = "<group>"; };
+		45A72B6823236064007DE9DA /* AgentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAnimation.swift; sourceTree = "<group>"; };
+		45A72B6B23236076007DE9DA /* AgentCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCharacter.swift; sourceTree = "<group>"; };
+		45A72B6E232366C9007DE9DA /* AgentImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentImage.swift; sourceTree = "<group>"; };
+		45A72B7123237B29007DE9DA /* AgentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentState.swift; sourceTree = "<group>"; };
+		45FF387E23242BA500F724B7 /* AgentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentView.swift; sourceTree = "<group>"; };
+		45FF38802324327800F724B7 /* AgentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentController.swift; sourceTree = "<group>"; };
+		45FF388223243E0400F724B7 /* AgentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentWindow.swift; sourceTree = "<group>"; };
+		45FF38972325240600F724B7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		45FF389B23253CAB00F724B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FF389D23253CD300F724B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45FF389F232541FA00F724B7 /* AgentViewController+AgentControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AgentViewController+AgentControllerDelegate.swift"; sourceTree = "<group>"; };
+		45FF38A1232542BC00F724B7 /* AgentControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentControllerDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		453D7F78231F189600995AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453D7F8A231F189600995AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453D7F6D231F189400995AB3 = {
+			isa = PBXGroup;
+			children = (
+				45A72A6A232257DB007DE9DA /* README.md */,
+				453D7F72231F189400995AB3 /* Clippy Shared */,
+				453D7F8E231F189600995AB3 /* Clippy macOS */,
+				453D7F7D231F189600995AB3 /* Clippy iOS */,
+				453D7F7C231F189600995AB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		453D7F72231F189400995AB3 /* Clippy Shared */ = {
+			isa = PBXGroup;
+			children = (
+				45A72A6623223959007DE9DA /* AgentParser */,
+				459AC4932325799600C43B06 /* CGImageExtensions.swift */,
+			);
+			path = "Clippy Shared";
+			sourceTree = "<group>";
+		};
+		453D7F7C231F189600995AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				453D7F7B231F189600995AB3 /* Clippy.app */,
+				453D7F8D231F189600995AB3 /* Clippy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		453D7F7D231F189600995AB3 /* Clippy iOS */ = {
+			isa = PBXGroup;
+			children = (
+				453D7F7E231F189600995AB3 /* AppDelegate.swift */,
+				453D7FC7231F911D00995AB3 /* Supporting Files */,
+			);
+			path = "Clippy iOS";
+			sourceTree = "<group>";
+		};
+		453D7F8E231F189600995AB3 /* Clippy macOS */ = {
+			isa = PBXGroup;
+			children = (
+				45FF38972325240600F724B7 /* main.swift */,
+				453D7F8F231F189600995AB3 /* AppDelegate.swift */,
+				45FF388223243E0400F724B7 /* AgentWindow.swift */,
+				45FF387E23242BA500F724B7 /* AgentView.swift */,
+				45FF38802324327800F724B7 /* AgentController.swift */,
+				45FF38A1232542BC00F724B7 /* AgentControllerDelegate.swift */,
+				453D7FC1231F90DA00995AB3 /* AgentViewController.swift */,
+				45FF389F232541FA00F724B7 /* AgentViewController+AgentControllerDelegate.swift */,
+				453D7FCB231F914800995AB3 /* Sub-Classes */,
+				453D7FC8231F912800995AB3 /* Supporting Files */,
+				45491A582325D842007E04E2 /* AgentBalloonViewController.swift */,
+			);
+			path = "Clippy macOS";
+			sourceTree = "<group>";
+		};
+		453D7FC7231F911D00995AB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FF389D23253CD300F724B7 /* Assets.xcassets */,
+				453D7F85231F189600995AB3 /* LaunchScreen.storyboard */,
+				453D7F88231F189600995AB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		453D7FC8231F912800995AB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FF389B23253CAB00F724B7 /* Assets.xcassets */,
+				45491A622325E8CA007E04E2 /* clippit.agent.zip */,
+				45491A642325E8CA007E04E2 /* links.agent.zip */,
+				45491A632325E8CA007E04E2 /* merlin.agent.zip */,
+				453D7F96231F189600995AB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		453D7FCB231F914800995AB3 /* Sub-Classes */ = {
+			isa = PBXGroup;
+			children = (
+				456FDA55231FA3E900170E12 /* GhostSKView.swift */,
+			);
+			path = "Sub-Classes";
+			sourceTree = "<group>";
+		};
+		45A72A6623223959007DE9DA /* AgentParser */ = {
+			isa = PBXGroup;
+			children = (
+				45A72A6723223968007DE9DA /* Agent.swift */,
+				45A72B5923235FCB007DE9DA /* StringExtensions.swift */,
+				45A72B5C2323602A007DE9DA /* AgentInfo.swift */,
+				45A72B5F23236038007DE9DA /* AgentBalloon.swift */,
+				45A72B6223236047007DE9DA /* AgentBranching.swift */,
+				45A72B6523236055007DE9DA /* AgentFrame.swift */,
+				45A72B6823236064007DE9DA /* AgentAnimation.swift */,
+				45A72B6B23236076007DE9DA /* AgentCharacter.swift */,
+				45A72B6E232366C9007DE9DA /* AgentImage.swift */,
+				45A72B7123237B29007DE9DA /* AgentState.swift */,
+			);
+			path = AgentParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		453D7F7A231F189600995AB3 /* Clippy iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453D7FA1231F189600995AB3 /* Build configuration list for PBXNativeTarget "Clippy iOS" */;
+			buildPhases = (
+				453D7F77231F189600995AB3 /* Sources */,
+				453D7F78231F189600995AB3 /* Frameworks */,
+				453D7F79231F189600995AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clippy iOS";
+			productName = "Clippy iOS";
+			productReference = 453D7F7B231F189600995AB3 /* Clippy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		453D7F8C231F189600995AB3 /* Clippy macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453D7FA4231F189600995AB3 /* Build configuration list for PBXNativeTarget "Clippy macOS" */;
+			buildPhases = (
+				453D7F89231F189600995AB3 /* Sources */,
+				453D7F8A231F189600995AB3 /* Frameworks */,
+				453D7F8B231F189600995AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clippy macOS";
+			productName = "Clippy macOS";
+			productReference = 453D7F8D231F189600995AB3 /* Clippy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		453D7F6E231F189400995AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Devran;
+				TargetAttributes = {
+					453D7F7A231F189600995AB3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					453D7F8C231F189600995AB3 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 453D7F71231F189400995AB3 /* Build configuration list for PBXProject "Clippy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 453D7F6D231F189400995AB3;
+			productRefGroup = 453D7F7C231F189600995AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				453D7F7A231F189600995AB3 /* Clippy iOS */,
+				453D7F8C231F189600995AB3 /* Clippy macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		453D7F79231F189600995AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FF389E23253CD300F724B7 /* Assets.xcassets in Resources */,
+				453D7F87231F189600995AB3 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453D7F8B231F189600995AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45491A652325E8CA007E04E2 /* clippit.agent.zip in Resources */,
+				45FF389C23253CAB00F724B7 /* Assets.xcassets in Resources */,
+				45491A672325E8CA007E04E2 /* links.agent.zip in Resources */,
+				45491A662325E8CA007E04E2 /* merlin.agent.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453D7F77231F189600995AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A72B5A23235FCB007DE9DA /* StringExtensions.swift in Sources */,
+				45A72B6923236064007DE9DA /* AgentAnimation.swift in Sources */,
+				45A72B6C23236076007DE9DA /* AgentCharacter.swift in Sources */,
+				453D7F7F231F189600995AB3 /* AppDelegate.swift in Sources */,
+				45A72B6F232366C9007DE9DA /* AgentImage.swift in Sources */,
+				459AC4942325799600C43B06 /* CGImageExtensions.swift in Sources */,
+				45A72B6623236055007DE9DA /* AgentFrame.swift in Sources */,
+				45A72B5D2323602A007DE9DA /* AgentInfo.swift in Sources */,
+				45A72B7223237B29007DE9DA /* AgentState.swift in Sources */,
+				45A72B6323236047007DE9DA /* AgentBranching.swift in Sources */,
+				45A72B6023236038007DE9DA /* AgentBalloon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453D7F89231F189600995AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A72B6423236047007DE9DA /* AgentBranching.swift in Sources */,
+				45FF38A0232541FA00F724B7 /* AgentViewController+AgentControllerDelegate.swift in Sources */,
+				45A72B5B23235FCB007DE9DA /* StringExtensions.swift in Sources */,
+				459AC4952325799600C43B06 /* CGImageExtensions.swift in Sources */,
+				45FF38982325240600F724B7 /* main.swift in Sources */,
+				45A72B6123236038007DE9DA /* AgentBalloon.swift in Sources */,
+				456FDA57231FB8B100170E12 /* AgentViewController.swift in Sources */,
+				45FF387F23242BA500F724B7 /* AgentView.swift in Sources */,
+				45FF388323243E0400F724B7 /* AgentWindow.swift in Sources */,
+				45A72B70232366C9007DE9DA /* AgentImage.swift in Sources */,
+				45A72B6D23236076007DE9DA /* AgentCharacter.swift in Sources */,
+				45A72B6723236055007DE9DA /* AgentFrame.swift in Sources */,
+				45A72B7323237B29007DE9DA /* AgentState.swift in Sources */,
+				456FDA56231FA3E900170E12 /* GhostSKView.swift in Sources */,
+				45A72B5E2323602A007DE9DA /* AgentInfo.swift in Sources */,
+				45FF38812324327800F724B7 /* AgentController.swift in Sources */,
+				453D7F90231F189600995AB3 /* AppDelegate.swift in Sources */,
+				45A72A692322396B007DE9DA /* Agent.swift in Sources */,
+				45A72B6A23236064007DE9DA /* AgentAnimation.swift in Sources */,
+				45491A592325D842007E04E2 /* AgentBalloonViewController.swift in Sources */,
+				45FF38A2232542BC00F724B7 /* AgentControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		453D7F85231F189600995AB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				453D7F86231F189600995AB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		453D7F9F231F189600995AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		453D7FA0231F189600995AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		453D7FA2231F189600995AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iOSAppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3ZG8RPGHF;
+				INFOPLIST_FILE = "Clippy iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devranuenal.Clippy;
+				PRODUCT_NAME = Clippy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"Texture Atlas Maximum Size" = 4096x4096;
+			};
+			name = Debug;
+		};
+		453D7FA3231F189600995AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iOSAppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3ZG8RPGHF;
+				INFOPLIST_FILE = "Clippy iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devranuenal.Clippy;
+				PRODUCT_NAME = Clippy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				"Texture Atlas Maximum Size" = 4096x4096;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		453D7FA5231F189600995AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = macOSAppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Z3ZG8RPGHF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Clippy macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devranuenal.Clippy;
+				PRODUCT_NAME = Clippy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		453D7FA6231F189600995AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = macOSAppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Z3ZG8RPGHF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Clippy macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devranuenal.Clippy;
+				PRODUCT_NAME = Clippy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		453D7F71231F189400995AB3 /* Build configuration list for PBXProject "Clippy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453D7F9F231F189600995AB3 /* Debug */,
+				453D7FA0231F189600995AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453D7FA1231F189600995AB3 /* Build configuration list for PBXNativeTarget "Clippy iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453D7FA2231F189600995AB3 /* Debug */,
+				453D7FA3231F189600995AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453D7FA4231F189600995AB3 /* Build configuration list for PBXNativeTarget "Clippy macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453D7FA5231F189600995AB3 /* Debug */,
+				453D7FA6231F189600995AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 453D7F6E231F189400995AB3 /* Project object */;
+}
