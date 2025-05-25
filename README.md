@@ -7,6 +7,12 @@ Clippy can be moved around (drag with mouse) and be animated (right-click).
 
 --- 
 
+## AI Update (v2)
+
+Now you can chat with Clippy! It has an integrated local llama.cpp, so no API keys / additional installations required.
+
+![Alt Text](video.mp4)
+
 ## First start
 
 1. [Download Clippy for macOS](https://downloadmacos.com/macshare.php?call=clippy) or build from source.
@@ -15,6 +21,10 @@ Clippy can be moved around (drag with mouse) and be animated (right-click).
 4. Unzip all files
 5. Click `📎` → `Reload`
 6. Pick an Agent under `📎` → `Agents` → `…`
+
+## Troubleshooting
+
+If you have any issues running the macOS build or the old one being installed, try [this binary](https://github.com/saggit/clippy-macos/releases/download/v2.0/Clippy-darwin-arm64.zip) or re-build from source.
 
 ## Build
 
