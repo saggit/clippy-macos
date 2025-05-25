@@ -1,0 +1,66 @@
+/* Default Theme */
+.clippy {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: var(--font-size);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Font Family */
+.clippy[data-font="Tahoma"] {
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.clippy[data-font="Comic Sans MS"] {
+  font-family: "Comic Sans MS", Tahoma, Arial, sans-serif;
+}
+
+.clippy[data-font="Pixelated MS Sans Serif"] {
+  font-family: "Pixelated MS Sans Serif", Tahoma, Arial, sans-serif;
+  -webkit-font-smoothing: none;
+}
+
+.clippy[data-font="System Default"] {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* Apply it all */
+
+.clippy > .title-bar,
+.window,
+button,
+input,
+label,
+legend,
+li[role="tab"],
+option,
+select,
+table,
+textarea,
+ul.tree-view {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  -webkit-font-smoothing: inherit !important;
+}
+
+.clippy h1 {
+  font-size: 1.5rem;
+}
+
+.clippy h2 {
+  font-size: 1.25rem;
+}
+
+.clippy h3 {
+  font-size: 1rem;
+}
