@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clippy Desktop Assistant</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="desktop-icons">
+      <a href="#window-video" class="desktop-icon" id="icon-video">
+        <img src="./images/icon_video.png" alt="video" />
+        <span>Clippy in Action</span>
+      </a>
+      <a href="#window-download" class="desktop-icon" id="icon-download">
+        <img src="./images/icon_download.png" alt="Download" />
+        <span>Download</span>
+      </a>
+      <a href="#window-about" class="desktop-icon" id="icon-about">
+        <img src="./images/icon_about.png" alt="About" />
+        <span>About</span>
+      </a>
+      <a
+        href="https://github.com/felixrieseberg/clippy"
+        target="_blank"
+        class="desktop-icon"
+        id="icon-github"
+      >
+        <img src="./images/icon_github.png" alt="GitHub" />
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="main-content">
+      <div class="window video-container" id="window-video">
+        <div class="title-bar">
+          <div class="title-bar-text">Clippy in Action</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <video autoplay loop muted controls width="640">
+            <source src="./video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div
+        class="window about-container"
+        id="window-about"
+        style="display: none"
+      >
+        <div class="title-bar">
+          <div class="title-bar-text">About Clippy</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>
+            You might be wondering: What’s the point of all this? Why? Clippy is
+            basically art. Don’t get me wrong, I don’t think that this little
+            app is all that magnificent or something that belongs in a museum, I
+            mean “art” in the sense that I’ve made it like other people do
+            watercolors or pottery - I made it because building it was fun for
+            me. If you get as little as a small chuckle out of it, I’m happy to
+            hear it.
+          </p>
+          <p>
+            You can find me on
+            <a href="https://www.felixrieseberg.com" target="_blank"
+              >felixrieseberg.com</a
+            >,
+            <a
+              href="https://bsky.app/profile/felixrieseberg.bsky.social"
+              target="_blank"
+              >Blue.sky</a
+            >, or
+            <a href="http://github.com/felixrieseberg" target="_blank">GitHub</a
+            >.
+          </p>
+          <h3>Clippy</h3>
+          <p>
+            You can find the source code for this app on
+            <a href="https://github.com/felixrieseberg/clippy" target="_blank"
+              >GitHub</a
+            >.
+          </p>
+          <h3>Acknowledgments</h3>
+          <p>
+            I am so grateful to Microsoft - not only for everything they've done
+            for Electron, but also for giving us one of the most iconic
+            characters and designs of computing history.
+          </p>
+          <ul>
+            <li>
+              The entire <a href="https://electronjs.org">Electron team</a> for
+              continuing to be wonderful people to build open source with
+            </li>
+            <li>
+              <a href="https://www.kevanatteberry.com/">Kevan Atteberry</a> for
+              Clippy
+            </li>
+            <li>
+              <a href="https://github.com/jdan">Jordan Scales (@jdan)</a> for
+              the Windows 98 design
+            </li>
+            <li>
+              <a href="https://github.com/pi0">Pooya Parsa (@pi0)</a> for being
+              the (as far as I know) person to extract the length of each frame
+              from the Clippy spritesheet.
+            </li>
+            <li>
+              <a href="https://github.com/withcatai/node-llama-cpp"
+                >node-llama-cpp</a
+              >
+              for squeezing llama.cpp into Node.js
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="window download-container" id="window-download">
+        <div class="title-bar">
+          <div class="title-bar-text">Download Clippy today!</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>
+            Clippy lets you run a variety of large language models (LLMs)
+            locally on your computer while sticking with a user interface of the
+            1990s. It's a love letter and homage to the late, great Clippy - and
+            the visual design created by Microsoft in that era.
+          </p>
+          <ul>
+            <li>
+              <strong>Simple, familiar, and classic chat interface</strong>.
+              Send messages to your models, get a response.
+            </li>
+            <li>
+              <strong>Batteries included: No complicated setup</strong>. Just
+              open the app and chat away. Thanks to llama.cpp and
+              <code>node-llama-cpp</code>, the app will automatically discover
+              the most efficient way to run your models (Metal, CUDA, Vulkan,
+              etc).
+            </li>
+            <li>
+              <strong>Custom models, prompts, and parameters</strong>: Load your
+              own downloaded models and play with the settings.
+            </li>
+            <li>
+              <strong>Offline, local, free</strong>: Everything runs on your
+              computers. The only network request Clippy makes is to check for
+              updates (which you can disable).
+            </li>
+          </ul>
+          <p>
+            This app is not affiliated, approved, or supported by Microsoft.
+            This project isn't trying to be your best chat bot. I'd like you to
+            enjoy a weird mix of nostalgia for 1990s technology paired with one
+            the most magical technologies we can run on our computers in 2025.
+          </p>
+          <p>Do you want to download Clippy for your computer?</p>
+          <div class="download-buttons">
+            <div>
+              <a
+                class="button"
+                href="https://github.com/felixrieseberg/clippy/releases/download/v0.4.3/Clippy-darwin-arm64-0.4.3.zip"
+              >
+                <img src="images/macos.png" alt="macOS Icon" />
+                <span>macOS (Apple Silicon)</span>
+              </a>
+              <a
+                class="button"
+                href="https://github.com/felixrieseberg/clippy/releases/download/v0.4.3/Clippy-darwin-x64-0.4.3.zip"
+              >
+                <img src="images/macos.png" alt="macOS Icon" />
+                <span>macOS (Intel)</span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="button"
+                href="https://github.com/felixrieseberg/clippy/releases/download/v0.4.3/Clippy-win32-x64-0.4.3.zip"
+              >
+                <img src="images/windows.png" alt="Windows Icon" />
+                <span>Windows</span>
+              </a>
+            </div>
+            <div>
+              <a
+                class="button"
+                href="https://github.com/felixrieseberg/clippy/releases/download/v0.4.3/Clippy-0.4.3-1.x86_64.rpm"
+              >
+                <img src="images/linux.png" alt="Linux Icon" />
+                <span>Linux (RPM, x64)</span>
+              </a>
+              <a
+                class="button"
+                href="https://github.com/felixrieseberg/clippy/releases/download/v0.4.3/clippy_0.4.3_amd64.deb"
+              >
+                <img src="images/linux.png" alt="Linux Icon" />
+                <span>Linux (Debian, x64)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a href="https://felixrieseberg.com">Made with ❤️ in San Francisco</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

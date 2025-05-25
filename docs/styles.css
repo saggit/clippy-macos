@@ -1,0 +1,239 @@
+body {
+  background-color: #008080;
+  font-family: "Tahoma", "Pixelated MS Sans Serif", "MS Sans Serif", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.window,
+button,
+input,
+label,
+legend,
+li[role="tab"],
+option,
+select,
+table,
+textarea,
+ul.tree-view {
+  font-family: inherit !important;
+  -webkit-font-smoothing: inherit !important;
+}
+
+.main-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.about-container {
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  left: calc(50% - 325px);
+  top: 100px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.video-container {
+  width: 657px;
+  position: fixed;
+  z-index: 1;
+  left: calc(50% - (3 / 7 * 100vw));
+  top: calc((1 / 7 * 100vh));
+}
+
+.download-container {
+  width: 450px;
+  position: fixed;
+  top: calc((2 / 7 * 100vh));
+  right: calc(50% - (3 / 7 * 100vw));
+  z-index: 2;
+}
+
+.window-body {
+  color: black;
+  text-align: left;
+}
+
+.window-body button {
+  margin: 8px;
+  width: 180px;
+}
+
+.window-body p:first-of-type {
+  margin-top: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.download-buttons a.button {
+  min-width: 150px;
+  height: 30px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: silver;
+  border: none;
+  border-radius: 0;
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #fff,
+    inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
+  color: transparent;
+  min-height: 23px;
+  min-width: 75px;
+  padding: 0 12px;
+  text-shadow: 0 0 #222;
+  margin: 5px;
+}
+
+.download-buttons a.button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.download-buttons a.button img {
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.desktop-icons {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.desktop-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-icon img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.desktop-icon span {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .desktop-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .window {
+    position: static !important;
+    width: 99% !important;
+    margin-bottom: 20px;
+    margin-left: 0.7%;
+    display: block !important;
+    box-sizing: border-box;
+  }
+
+  .window .title-bar {
+    pointer-events: none;
+  }
+
+  .window .title-bar-controls {
+    display: none;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+
+  .download-container {
+    max-width: 100%;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .download-buttons > div {
+    width: 100%;
+  }
+
+  .download-buttons a.button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  footer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Clippy",
+  "productName": "Clippy",
+  "version": "0.4.3",
+  "description": "Clippy",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "prettier --write --ext .ts,.tsx .",
+    "extract-animations": "./tools/extract-animations.sh -j ./assets/animations/clippy/animations.json -s ./assets/animations/clippy/map.png -o src/renderer/images/animations"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Felix Rieseberg",
+    "email": "fr@makenotion.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixrieseberg/clippy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.0",
+    "@electron-forge/maker-deb": "^7.8.0",
+    "@electron-forge/maker-rpm": "^7.8.0",
+    "@electron-forge/maker-squirrel": "^7.8.0",
+    "@electron-forge/maker-zip": "^7.8.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.0",
+    "@electron-forge/plugin-fuses": "^7.8.0",
+    "@electron-forge/plugin-vite": "^7.8.0",
+    "@electron/fuses": "^1.8.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "dotenv": "^16.5.0",
+    "electron": "35.1.4",
+    "eslint": "^8.57.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "prettier": "3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "vite": "^5.4.14"
+  },
+  "dependencies": {
+    "@electron/llm": "^1.1.1",
+    "98.css": "^0.1.21",
+    "date-fns": "^4.1.0",
+    "electron-context-menu": "^4.0.5",
+    "electron-log": "^5.4.0",
+    "electron-store": "^8.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "update-electron-app": "^3.1.1"
+  },
+  "overrides": {
+    "@electron/windows-sign": "1.2.2"
+  }
+}
